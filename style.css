@@ -1,0 +1,166 @@
+body {
+  margin: 0;
+  font-family: 'MedievalSharp', cursive;
+  color: #ffffff;
+  background: linear-gradient(to right, #170969, #61568d);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* หัวข้อ */
+.a2 h1 {
+  font-size: 100px;
+  padding: 0;
+  color: #fff;
+  margin: 20px 0 10px 0;
+  text-align: center;
+}
+
+div {
+  display: flex;
+  justify-content: center;
+}
+
+.allain {
+  position: relative;
+  filter: drop-shadow(0 0 30px rgb(0, 0, 0));
+  animation: float 10s ease-in-out infinite;
+  animation-delay: 1s;
+  border: none;
+}
+
+@keyframes float {
+  0%   { transform: translateY(0) rotate(var(--rotate, 0deg)); }
+  50%  { transform: translateY(-10px) rotate(var(--rotate, 0deg)); }
+  100% { transform: translateY(0) rotate(var(--rotate, 0deg)); }
+}
+
+.a1 {
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+  flex-wrap: wrap;    
+  z-index: 1;         
+  position: relative;
+  margin-left: 20px;
+  margin-top: -18%;
+  font-size: 24px;
+}
+
+a {
+  background: linear-gradient(to right, #1a1344, #3a2b75);
+  border: 2px solid;
+  padding: 8px 50px;
+  border-radius: 15px;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  transition: all 0.3 ease;
+}
+
+.a2 h1 {
+  font-size: 100px;
+  text-align: center;
+  padding: 0;
+  width: auto;
+  color: rgb(255, 255, 255);
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+
+.a1 :hover {
+  text-shadow: 2px 2px 4px lightgoldenrodyellow;
+  box-shadow: 0 0 40px white;
+  cursor: pointer;
+  transform: scale(1.05);
+  transition: all 0.3s ease;
+}
+
+.a1 :active {
+  transform: translateY(-20px) scale(1);
+  transition: transform 3s ease;
+}
+
+#bg-canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -2;
+}
+
+/* CREDIT */
+.credit {
+  margin-top: -29px;
+  z-index: 100;
+}
+
+.credit h3 a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 22px;
+  transition: color 0.3s ease;
+  background: none;
+  border: none;
+  padding: 0;
+}
+
+.credit h3 a:hover {
+
+  cursor: pointer;
+  text-shadow: 2px 2px 4px lightgoldenrodyellow;
+    transform: scale(1.05);
+  transition: all 0.3s ease;
+}
+
+
+/* คลื่นทอง */
+.gold-wave {
+  position: fixed;
+  transform: translate(-50%, -50%);
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: radial-gradient(circle, gold 20%, rgba(255,215,0,0.4) 70%, transparent 100%);
+  pointer-events: none;
+  animation: waveEffect 0.6s ease-out forwards;
+  z-index: 9999;
+}
+
+/* วงรอบคลื่น */
+.gold-ring {
+  position: fixed;
+  transform: translate(-50%, -50%);
+  width: 20px;
+  height: 20px;
+  border: 2px solid gold;
+  border-radius: 50%;
+  pointer-events: none;
+  animation: ringEffect 0.7s ease-out forwards;
+  z-index: 9998;
+}
+
+/* เอฟเฟกต์ wave */
+@keyframes waveEffect {
+  from {
+    transform: translate(-50%, -50%) scale(0.2);
+    opacity: 0.5;
+  }
+  to {
+    transform: translate(-50%, -50%) scale(4);
+    opacity: 0;
+  }
+}
+
+/* เอฟเฟกต์วงรอบ */
+@keyframes ringEffect {
+  from {
+    transform: translate(-50%, -50%) scale(0.5);
+    opacity: 0.8;
+  }
+  to {
+    transform: translate(-50%, -50%) scale(3);
+    opacity: 0;
+  }
+}
