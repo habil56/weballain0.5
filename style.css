@@ -44,8 +44,8 @@ div {
   z-index: 1;         
   position: relative;
   margin-left: 20px;
-  margin-top: -18%;
-  font-size: 30px;
+  margin-top: -19%;
+  font-size: 35px;
 }
 
 a {
@@ -99,7 +99,7 @@ a {
 .credit h3 a {
   text-decoration: none;
   color: #ffffff;
-  font-size: 22px;
+  font-size: 30px;
   transition: color 0.3s ease;
   background: none;
   border: none;
@@ -164,4 +164,5 @@ a {
     opacity: 0;
   }
 }
+
 
