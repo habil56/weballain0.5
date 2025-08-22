@@ -38,14 +38,14 @@ div {
 
 .a1 {
   display: flex;
-  gap: 50px;
+  gap: 80px;
   justify-content: center;
   flex-wrap: wrap;    
   z-index: 1;         
   position: relative;
   margin-left: 20px;
   margin-top: -18%;
-  font-size: 24px;
+  font-size: 30px;
 }
 
 a {
@@ -164,3 +164,4 @@ a {
     opacity: 0;
   }
 }
+
